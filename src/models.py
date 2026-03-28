@@ -39,7 +39,7 @@ class ToDoList:
 
     def remove_task(self, index: int):
         if index < 0 or index > len(self.tasks) - 1:
-            raise ValueError("Неверный индекс!")
+            raise ValueError("Wrong index!")
 
         del self.tasks[index]
 
@@ -48,5 +48,5 @@ class ToDoList:
 
     def get_task(self, index: int):
         if index < 0 or index > len(self.tasks) - 1:
-            raise ValueError("Неверный индекс!")
+            raise ValueError("Wrong index!")
         return self.tasks[index]
