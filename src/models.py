@@ -24,7 +24,7 @@ class Task:
         return cls(task_title, task_description, task_is_done)
 
     def __str__(self) -> str:
-        return f"Task: {self.title}\nStatus: {self.is_done}"
+        return f"\nTask: {self.title}\nStatus: {self.is_done}"
 
     def __repr__(self) -> str:
         return f"\nTask: {self.title}\nDescription: {self.description}\nStatus: {self.is_done}"
