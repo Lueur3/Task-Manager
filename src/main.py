@@ -66,7 +66,7 @@ while True:
 
             case 0:  # exit
                 sys.exit()
-    except ValueError, IndexError:
+    except (ValueError, IndexError):
         print("Input error or incorrect index!")
 
     except Exception as e:
